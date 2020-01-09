@@ -23,24 +23,41 @@
                                     <constraint firstAttribute="width" constant="60" id="bj0-LZ-IKs"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYN-eG-L20">
+                                <rect key="frame" x="176" y="790" width="63" height="43"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="R5B-Ow-s42"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" image="arrow.up.square.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="swpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjZ-Ps-gwt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="U1o-uT-BI6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ne-OA-gHc"/>
+                            <constraint firstItem="MYN-eG-L20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="8bh-Le-lZb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MYN-eG-L20" secondAttribute="bottom" constant="29" id="B8g-X2-Os2"/>
                             <constraint firstItem="U1o-uT-BI6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N7S-Ca-BEx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MYN-eG-L20" secondAttribute="trailing" constant="175" id="pZM-ff-TOO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="SwpBtn" destination="MYN-eG-L20" id="YYP-TX-M5H"/>
                         <outlet property="profileImage" destination="U1o-uT-BI6" id="FkO-g2-1q9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="107"/>
+            <point key="canvasLocation" x="102.89855072463769" y="106.47321428571428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.up.square.fill" catalog="system" width="64" height="56"/>
         <image name="speaker.zzz.fill.rtl" catalog="system" width="64" height="46"/>
     </resources>
 </document>

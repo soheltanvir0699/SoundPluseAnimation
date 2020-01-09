@@ -12,10 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var profileImage: UIImageView!
    var pulseLayers = [CAShapeLayer]()
         
-        override func viewDidLoad() {
+    @IBOutlet weak var SwpBtn: UIButton!
+    override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
             profileImage.layer.cornerRadius = profileImage.frame.size.width/2.0
+        SwpBtn.layer.cornerRadius = 10
             createPulse()
         }
         
@@ -71,6 +73,11 @@ class ViewController: UIViewController {
             // Dispose of any resources that can be recreated.
         }
 
-
+    @IBAction func swpAction(_ sender: Any) {
+        UIView.animate(withDuration: 1) {
+            self.SwpBtn.frame.origin.y -= 50
+        }
+    }
+    
     }
 
